@@ -1,35 +1,27 @@
 BDD, TDD Cycle
 ===
 
-In this assignment you will use a combination of Behavior-Driven Design (BDD) and Test-Driven Development (TDD) with the Cucumber and RSpec tools to 
-add a "find movies with same director" feature to RottenPotatoes, and deploy the resulting app on Heroku.
+In this assignment you will use a combination of Behavior-Driven Design (BDD) and Test-Driven Development (TDD) with the Cucumber and RSpec tools to add a "find movies with same director" feature to RottenPotatoes, and deploy the resulting app on Heroku.
 
-To get the initial RottenPotatoes code, you can either fork this repo or start from a previous working repo containing RottenPotatoes.
+To get the initial RottenPotatoes code please clone this bdd-tdd-cycle GitHub repo as follows:
 
-**Preparation: Setup of Cucumber and RSpec**
+git clone https://github.com/saasbook/bdd-tdd-cycle
 
-1. Make sure your Gemfile contains [these changes recommended in ESaaS](http://pastebin.com/HnHbnaZD),
-2. Also add these lines  within the `group :test,:development` block, in order to compute code coverage in a Rails app:
+Please now follow the instructions below to get setup:
+----
 
-```ruby
-group :test,:development do
-  gem 'rspec-rails'
-  gem 'simplecov'
-  # rest of whatever was inside this group originally
-end
-```
+1) Change into the rottenpotatoes directory: cd bdd-tdd-cycle/rottenpotatoes
+2) Run bundle install --without production to make sure all gems are properly installed.
+3) Run bundle exec rake db:migrate to apply database migrations.
+4) Finally, run these commands to set up the Cucumber directories (under features/) and RSpec directories (under spec/) if they don't already exist, allowing overwrite of any existing files:
 
-
-1. Run `bundle install --without production` to make sure the gems are properly installed.  
-
-3. Finally, run these commands to set up the Cucumber directories 
-(under `features/`) and RSpec directories (under `spec/`) if they don't already exist, allowing overwrite of any existing files:
 ```shell
 rails generate cucumber:install capybara
 rails generate cucumber_rails_training_wheels:install
 rails generate rspec:install
 ```
-You can double-check if everything was installed by running the tasks `rake spec` and `rake cucumber`.  
+5) You can double-check if everything was installed by running the tasks `rake spec` and `rake cucumber`.  
+
 Since presumably you have no features or specs yet, both tasks should execute correctly reporting that there are zero tests to run. Depending on your version of rspec, it may also display a message stating that it was not able to find any _spec.rb files.
 
 **Part 1: add a Director field to Movies**
