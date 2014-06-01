@@ -10,9 +10,9 @@ git clone https://github.com/saasbook/bdd-tdd-cycle
 Please now follow the instructions below to get setup:
 ----
 
-1) Change into the rottenpotatoes directory: cd bdd-tdd-cycle/rottenpotatoes
-2) Run bundle install --without production to make sure all gems are properly installed.
-3) Run bundle exec rake db:migrate to apply database migrations.
+1) Change into the rottenpotatoes directory: cd bdd-tdd-cycle/rottenpotatoes  
+2) Run bundle install --without production to make sure all gems are properly installed.  
+3) Run bundle exec rake db:migrate to apply database migrations.  
 4) Finally, run these commands to set up the Cucumber directories (under features/) and RSpec directories (under spec/) if they don't already exist, allowing overwrite of any existing files:
 
 ```shell
