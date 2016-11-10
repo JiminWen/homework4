@@ -1814,3 +1814,415 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:23:25 +0000
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/7" for 66.76.2.61 at 2016-11-10 06:26:00 +0000
+Connecting to database specified by database.yml
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  Rendered movies/show.html.haml within layouts/application (47.3ms)
+Completed 200 OK in 219.0ms (Views: 106.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:26:01 +0000
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:26:01 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:26:01 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:26:01 +0000
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/movies/7/edit" for 66.76.2.61 at 2016-11-10 06:26:05 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered movies/edit.html.haml within layouts/application (12.6ms)
+Completed 500 Internal Server Error in 16.0ms
+
+ActionView::Template::Error (wrong number of arguments (0 for 2)):
+    7:   = label :movie, :title, 'Title'
+    8:   = text_field :movie, 'title'
+    9:   
+    10:   = label 
+    11:   = text_field :movie, 'Directors'
+    12: 
+    13:   = label :movie, :rating, 'Rating'
+  app/views/movies/edit.html.haml:10:in `block in _app_views_movies_edit_html_haml__1748496714710988714_70003946233300'
+  app/views/movies/edit.html.haml:5:in `_app_views_movies_edit_html_haml__1748496714710988714_70003946233300'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.2ms)
+
+
+Started GET "/movies/7/edit" for 66.76.2.61 at 2016-11-10 06:26:54 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  Rendered movies/edit.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 14.8ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:26:54 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:26:54 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:26:54 +0000
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:26:54 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies/7/edit" for 66.76.2.61 at 2016-11-10 06:27:35 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered movies/edit.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 11.8ms (Views: 10.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:27:35 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:27:35 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:27:35 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:27:35 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started PUT "/movies/7" for 66.76.2.61 at 2016-11-10 06:27:42 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5GLwX+byvlsELejm0LFSNGyMdwzTIyzK2BhVfPat4tU=", "movie"=>{"title"=>"2001: A Space Odyssey", "director"=>"ff", "rating"=>"G", "release_date(1i)"=>"1968", "release_date(2i)"=>"4", "release_date(3i)"=>"6"}, "commit"=>"Update Movie Info", "id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+WARNING: Can't mass-assign protected attributes: director
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://hw4-jiminwen.c9users.io/movies/7
+Completed 302 Found in 3.8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/7" for 66.76.2.61 at 2016-11-10 06:27:42 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered movies/show.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 6.5ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:27:42 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:27:42 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:27:42 +0000
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:27:42 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/7" for 66.76.2.61 at 2016-11-10 06:30:23 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  Rendered movies/show.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 12.6ms (Views: 11.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:30:23 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:30:23 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:30:23 +0000
+Served asset /application.js - 304 Not Modified (45ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:30:23 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/7/edit" for 66.76.2.61 at 2016-11-10 06:30:29 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered movies/edit.html.haml within layouts/application (4.1ms)
+Completed 200 OK in 10.9ms (Views: 9.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:30:29 +0000
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:30:29 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:30:29 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:30:29 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started PUT "/movies/7" for 66.76.2.61 at 2016-11-10 06:30:36 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5GLwX+byvlsELejm0LFSNGyMdwzTIyzK2BhVfPat4tU=", "movie"=>{"title"=>"2001: A Space Odyssey", "director"=>"james", "rating"=>"G", "release_date(1i)"=>"1968", "release_date(2i)"=>"4", "release_date(3i)"=>"6"}, "commit"=>"Update Movie Info", "id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+WARNING: Can't mass-assign protected attributes: director
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://hw4-jiminwen.c9users.io/movies/7
+Completed 302 Found in 3.8ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/movies/7" for 66.76.2.61 at 2016-11-10 06:30:36 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered movies/show.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 6.3ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:30:36 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:30:36 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:30:36 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:30:36 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/movies/7/edit" for 66.76.2.61 at 2016-11-10 06:34:37 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  Rendered movies/edit.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 8.5ms (Views: 7.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:34:37 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:34:37 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:34:37 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:34:37 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started PUT "/movies/7" for 66.76.2.61 at 2016-11-10 06:34:42 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5GLwX+byvlsELejm0LFSNGyMdwzTIyzK2BhVfPat4tU=", "movie"=>{"title"=>"2001: A Space Odyssey", "director"=>"3333", "rating"=>"G", "release_date(1i)"=>"1968", "release_date(2i)"=>"4", "release_date(3i)"=>"6"}, "commit"=>"Update Movie Info", "id"=>"7"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+WARNING: Can't mass-assign protected attributes: director
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://hw4-jiminwen.c9users.io/movies/7
+Completed 302 Found in 3.7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/7" for 66.76.2.61 at 2016-11-10 06:34:42 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  Rendered movies/show.html.haml within layouts/application (1.2ms)
+Completed 200 OK in 7.2ms (Views: 6.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:34:43 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:34:43 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:34:43 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:34:43 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies/7" for 66.76.2.61 at 2016-11-10 06:35:29 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered movies/show.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 7.3ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:35:29 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:35:29 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:35:29 +0000
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:35:29 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies/7/edit" for 66.76.2.61 at 2016-11-10 06:35:35 +0000
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  Rendered movies/edit.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 14.1ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:35:35 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:35:35 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:35:35 +0000
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:35:35 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started PUT "/movies/7" for 66.76.2.61 at 2016-11-10 06:36:38 +0000
+Processing by MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5GLwX+byvlsELejm0LFSNGyMdwzTIyzK2BhVfPat4tU=", "movie"=>{"title"=>"2001: A Space Odyssey", "director"=>"james", "rating"=>"G", "release_date(1i)"=>"1968", "release_date(2i)"=>"4", "release_date(3i)"=>"6"}, "commit"=>"Update Movie Info", "id"=>"7"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.2ms)[0m  UPDATE "movies" SET "director" = 'james', "updated_at" = '2016-11-10 06:36:38.570400' WHERE "movies"."id" = 7
+  [1m[36m (10.5ms)[0m  [1mcommit transaction[0m
+Redirected to https://hw4-jiminwen.c9users.io/movies/7
+Completed 302 Found in 35.2ms (ActiveRecord: 14.8ms)
+
+
+Started GET "/movies/7" for 66.76.2.61 at 2016-11-10 06:36:38 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered movies/show.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 9.2ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:36:38 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:36:38 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:36:38 +0000
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:36:38 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies" for 66.76.2.61 at 2016-11-10 06:36:42 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://hw4-jiminwen.c9users.io/?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date
+Completed 302 Found in 1.1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date" for 66.76.2.61 at 2016-11-10 06:36:42 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"release_date"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R') ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 57.7ms (Views: 14.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:36:42 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:36:42 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:36:42 +0000
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:36:42 +0000
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies/7" for 66.76.2.61 at 2016-11-10 06:36:47 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered movies/show.html.haml within layouts/application (1.3ms)
+Completed 200 OK in 6.5ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 66.76.2.61 at 2016-11-10 06:36:47 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 66.76.2.61 at 2016-11-10 06:36:47 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 66.76.2.61 at 2016-11-10 06:36:47 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 66.76.2.61 at 2016-11-10 06:36:47 +0000
+Served asset /application.js - 304 Not Modified (1ms)
