@@ -35,7 +35,7 @@ to load the new post-migration schema into the test database!
 
 **Part 2: use BDD+TDD to get new scenarios passing**
 
-We've provided [three Cucumber scenarios](http://pastebin.com/L6FYWyV7) to 
+We've provided [three Cucumber scenarios](https://gist.github.com/armandofox/26acabd340e756439592aabb326326bc) to 
 drive creation of the happy path of Search for Movies by Director.
 The first lets you add director info to an existing movie, 
 and doesn't require creating any new views or controller actions 
@@ -87,7 +87,7 @@ Now when you run `rake spec` or `rake cucumber`, SimpleCov will generate a repor
 `coverage/`. Since both RSpec and Cucumber are so widely used, SimpleCov
 can intelligently merge the results, so running the tests for Rspec does
 not overwrite the coverage results from SimpleCov and vice versa. See
-the [ESaaS screencast](http://vimeo.com/34754907) for step-by-step instructions on setting up SimpleCov.
+the [ESaaS screencast](https://www.youtube.com/watch?v=bT8zRRRmbUs) for step-by-step instructions on setting up SimpleCov.
 
 **TURN-IN:**
 
