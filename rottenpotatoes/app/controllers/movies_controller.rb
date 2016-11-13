@@ -1,6 +1,7 @@
 class MoviesController < ApplicationController
 
   def show
+   
     id = params[:id] # retrieve movie ID from URI route
     @movie = Movie.find(id) # look up movie by unique ID
     # will render app/views/movies/show.<extension> by default
@@ -41,6 +42,7 @@ class MoviesController < ApplicationController
   end
 
   def create
+   
     @movie = Movie.create!(params[:movie])
     flash[:notice] = "#{@movie.title} was successfully created."
     redirect_to movies_path
